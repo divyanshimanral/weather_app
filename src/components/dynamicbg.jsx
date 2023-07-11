@@ -1,8 +1,9 @@
 import Rain from "../assets/bg-img/rain.jpg";
 import Haze from "../assets/bg-img/haze.png";
-import Mist from "../assets/bg-img/mist.png";
-import Clear from "../assets/bg-img/clear.png";
-import Clouds from "../assets/bg-img/clouds.png";
+// import Mist from "../assets/bg-img/mist.png";
+import Mist from "../assets/bg-img/Mist2.png";
+import Clear from "../assets/bg-img/clear3.png";
+import Clouds from "../assets/bg-img/cloud2.png";
 import Drizzle from "../assets/bg-img/drizzle2.png";
 import Bg from "../assets/bg-img/bg.png";
 
