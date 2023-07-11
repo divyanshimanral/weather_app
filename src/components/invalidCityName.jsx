@@ -1,4 +1,4 @@
-import giphy from "../assets/giphy.webp";
+import giphy from "../assets/others/giphy.webp";
 export default function ErrorFallback({ error, resetErrorBoundary }) {
   return (
     <div className="errorFallback">
@@ -6,7 +6,9 @@ export default function ErrorFallback({ error, resetErrorBoundary }) {
       <div className="img">
         <img src={giphy} alt="giphy" />
       </div>
-      <button className="btn" onClick={resetErrorBoundary}>Try Again</button>
+      <button className="btn" onClick={resetErrorBoundary}>
+        Try Again
+      </button>
     </div>
   );
 }

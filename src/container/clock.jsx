@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import DynamicBg from "../components/dynamicbg";
 
 export default function Clock() {
   const [date, setDate] = useState(new Date());
@@ -11,9 +12,14 @@ export default function Clock() {
       clearInterval(timerId);
     };
   }, []);
+  let timeArr = date.toLocaleTimeString().split(":");
+  let timeFormat = `${timeArr[0]}:${timeArr[1]}`;
+  let amPm = date.toLocaleTimeString().split(" ")[1];
   return (
     <div>
-      <span>Current time is: {date.toLocaleTimeString()}</span>
+      <span>
+        Current time is: {timeFormat} {amPm}
+      </span>
     </div>
   );
 }

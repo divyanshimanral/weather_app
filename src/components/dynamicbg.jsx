@@ -7,8 +7,6 @@ import Drizzle from "../assets/bg-img/drizzle2.png";
 import Bg from "../assets/bg-img/bg.png";
 
 export default function DynamicBg({ description }) {
-  // console.log(description);
-
   const ImgUrls = () => {
     const bgImages = {
       Mist: `url(${Mist})`,
@@ -16,10 +14,10 @@ export default function DynamicBg({ description }) {
       Clouds: `url(${Clouds})`,
       Rain: `url(${Rain})`,
       Haze: `url(${Haze})`,
+      Drizzle: `url(${Drizzle})`,
     };
     return bgImages[description] || `url(${Bg})`;
   };
-  // console.log(ImgUrls())
   document.body.style.backgroundImage = ImgUrls();
   return <div></div>;
 }

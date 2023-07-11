@@ -59,18 +59,17 @@ form > input {
 /* Day css  */
 .day {
   font-weight: 100;
-  /* font-family: "Chela One", cursive; */
   letter-spacing: 2px;
 }
 
 /* Error fallback */
 .errorFallback {
   text-align: center;
-  color: white;
-  font-family: "Rubik", sans-serif;
+  color: rgb(11, 10, 10);
+  font-family: "Chela One", cursive;
+  letter-spacing: 2px;
 }
 .img {
-  /* border: 2px solid white; */
   display: block;
 }
 .img > img {
@@ -82,16 +81,23 @@ form > input {
 
 .errorFallback .btn {
   margin-top: 2rem;
-  /* background: linear-gradient(to right, #62ff57, #009414);  */
-  background: linear-gradient(to right, #b24592, #f15f79);
+  background: linear-gradient(to right, #62ff57, #009414);
 }
 .errorFallback .btn:hover {
-  background: linear-gradient(to left, #b24592, #f15f79);
+  background: linear-gradient(to left, #62ff57, #009414);
 }
 @media screen and (max-width: 1640px) and (min-width: 1000px) {
   .img {
     height: 400px;
     width: 800px;
     margin: 0 auto;
+  }
+}
+@media screen and (max-width: 420px) {
+  form {
+    flex-direction: column;
+  }
+  form > .btn {
+    margin-top: 0.5rem;
   }
 }
