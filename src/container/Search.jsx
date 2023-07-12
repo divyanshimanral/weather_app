@@ -42,6 +42,25 @@ export default function Search() {
   }, []);
   // console.log(weatherData.weather[0].main);
 
+  // time
+  let now = new Date();
+  let hours = now.toLocaleTimeString().split(":")[0];
+  let AmPm = now.toLocaleTimeString().split(" ")[1];
+  let dayNight;
+
+  if (AmPm === "AM") {
+    if (hours >= 4 && hours < 11) {
+      dayNight = "Day";
+    } else {
+      dayNight = "Night";
+    }
+  } else if (AmPm === "PM") {
+    if ((hours = 12 && hours > 7)) {
+      dayNight = "Day";
+    } else {
+      dayNight = "Night";
+    }
+  }
   return (
     <div className="form">
       <form onSubmit={handleSubmit}>
@@ -62,7 +81,10 @@ export default function Search() {
       ) : (
         <InvalidCityName />
       )}
-      <DynamicBg description={weatherData?.weather[0].main} />
+      <DynamicBg
+        description={weatherData?.weather[0].main}
+        dayNight={dayNight}
+      />
     </div>
   );
 }

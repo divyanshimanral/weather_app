@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import DynamicBg from "../components/dynamicbg";
 
 export default function Clock() {
   const [date, setDate] = useState(new Date());
