@@ -49,7 +49,7 @@ export default function Search() {
   let dayNight;
 
   if (AmPm === "AM") {
-    if (hours >= 4 && hours < 11) {
+    if (hours >= 4 && hours <= 11) {
       dayNight = "Day";
     } else {
       dayNight = "Night";
