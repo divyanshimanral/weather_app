@@ -5,7 +5,7 @@ import Mist from "../assets/bg-img/mist.png";
 import Clear from "../assets/bg-img/clear4.png";
 import Clouds from "../assets/bg-img/cloud5.png";
 import Drizzle from "../assets/bg-img/drizzle2.png";
-import darkRain from "../assets/bg-img/night/darkRain.png";
+import darkRain from "../assets/bg-img/night/darkrain.png";
 import darkClear from "../assets/bg-img/night/darkclear.png";
 import darkHaze from "../assets/bg-img/night/hazedark.png";
 import darkDrizzle from "../assets/bg-img/night/darkdrizzle.png";
