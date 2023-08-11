@@ -29,7 +29,7 @@ export default function Search() {
       setLoading(false);
     }
   };
-
+  // console.log(weatherData)
   const handleSubmit = (e) => {
     e.preventDefault();
     setLoading(true);
@@ -55,7 +55,7 @@ export default function Search() {
       dayNight = "Night";
     }
   } else if (AmPm === "PM") {
-    if ((hours = 12 && hours > 7)) {
+    if ((hours = 12 && hours < 7)) {
       dayNight = "Day";
     } else {
       dayNight = "Night";
@@ -68,7 +68,9 @@ export default function Search() {
           type="text"
           value={location}
           placeholder="🔍Enter city name"
-          onChange={(e) => setLocation(e.target.value)}
+          onChange={(e) => {
+            setLocation(e.target.value);
+          }}
         />
         <button className="btn" type="submit">
           Get weather

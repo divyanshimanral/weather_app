@@ -1,7 +1,7 @@
 import DynamicBg from "./dynamicbg";
 
 export default function Emojis({ main }) {
-  console.log(main);
+  // console.log(main);
   let emoji;
   let climate = main;
   if (climate === "Drizzle") {

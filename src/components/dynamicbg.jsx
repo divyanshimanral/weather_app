@@ -14,8 +14,6 @@ import darkClouds from "../assets/bg-img/bg.png";
 import Bg from "../assets/bg-img/bg.png";
 
 export default function DynamicBg({ description, dayNight }) {
-  console.log(description);
-  console.log(dayNight);
   let backgroundImage;
   const ImgUrls = () => {
     const bgImages = {

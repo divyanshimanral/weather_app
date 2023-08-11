@@ -2,7 +2,8 @@ import Clock from "../container/clock";
 import Day from "./Day";
 import Emojis from "./emojis";
 
-export default function DataDisplay({ data }) {
+export default function DataDisplay({data}) {
+  console.log(data)
   return (
     <div>
       <div className="display">

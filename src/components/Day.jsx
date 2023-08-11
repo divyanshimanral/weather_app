@@ -8,7 +8,7 @@ export default function Day(props) {
     let date = dateArr[2];
     let year = dateArr[3];
     // console.log(dateArr)
-    return `${day} ${date}/${month}/${year}`;
+    return `${day}, ${date}/${month}/${year}`;
   }
   let day = dateBuilder();
   return (
