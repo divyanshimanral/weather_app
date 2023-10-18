@@ -1,8 +1,8 @@
-# Weather_app_react
+# Weather Website
 
 A Weather app Build using reactjs
 
-The hosted link of website is here: <a href="https://weather-app-react-div.netlify.app/">Weather App React</a>
+The hosted link of website is here: <a href="https://weather-website-reactjs.netlify.app/">Weather website</a>
 
 The provided code appears to be a React-based weather application. Here are the key features of the app:
 
